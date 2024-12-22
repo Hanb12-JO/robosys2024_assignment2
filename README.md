@@ -1,2 +1,2 @@
 # robosys2024-assignment2
-![demo](https://github.com/user-attachments/assets/11f94e41-4077-4d47-ae65-e6eac90bede4)
+![demo](https://github.com/user-attachments/assets/2e25540a-8916-4943-904c-cb0dbbca015d)
