@@ -13,13 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='abdel',
+    maintainer='Abdelrahman Alhanbali',
     maintainer_email='abdelrahman.alhanbali@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='For robosys2024 assignment2',
+    license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'wifispeed = assignment2.wifispeed:main',
         ],
     },
 )
