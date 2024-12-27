@@ -16,26 +16,27 @@ class WifiSpeedPublisher(Node):
         super().__init__('wifi_speed_publisher')
         self.pub = self.create_publisher(String, 'wifispeed', 10)
         self.wifi = speedtest.Speedtest()
-        self.create_timer(5.0, self.cb)  # 5秒ごとに速度を測定して送信
+        self.create_timer(1.0, self.cb)
 
     def cb(self):
-        # Wi-Fi速度を計測
-        download_speed = self.wifi.download()
-        upload_speed = self.wifi.upload()
-
-        # Mbpsに変換
-        download_speed_mbps = bytes_to_mbps(download_speed)
-        upload_speed_mbps = bytes_to_mbps(upload_speed)
-
-        # メッセージを作成してパブリッシュ
         msg = String()
-        msg.data = f"Download: {download_speed_mbps} Mbps, Upload: {upload_speed_mbps} Mbps"
+        msg.data = "Getting download speed..."
+        download_speed = self.wifi.download()
         self.pub.publish(msg)
 
-        # ログに出力
-        #self.get_logger().info(f"Published: {message.data}")
+        msg.data = "Getting upload speed..."
+        upload_speed = self.wifi.upload()
+        self.pub.publish(msg)
+
+            ### Mbpsに変換 ###
+        download_speed_mbps = bytes_to_mb(download_speed)
+        upload_speed_mbps = bytes_to_mb(upload_speed)
+
+        msg.data = f"Download: {download_speed_mbps}, Upload: {upload_speed_mbps}"
+        self.pub.publish(msg)
 
 def main():
     rclpy.init()
     node = WifiSpeedPublisher()
     rclpy.spin(node)
+

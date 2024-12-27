@@ -1,15 +1,17 @@
+import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
-import speedtest
-import math
 
-rclpy.init()
-node = Node("wifispeed_sub")
+class WifiSpeedSubscriber(Node):
+    def __init__(self):
+        super().__init__("wifispeed_sub")
+        self.create_subscription(String, "wifispeed", self.cb, 10)
 
-def cb(msg):
-    global node
-    node.get_logger().info(f"Published: {msg.data}")
+    def cb(self, msg):
+        self.get_logger().info(f"{msg.data}")
 
 def main():
-    sub = node.create_subscription(String, "wifispeed", cb, 10)
+    rclpy.init()
+    node = WifiSpeedSubscriber()
     rclpy.spin(node)
+
