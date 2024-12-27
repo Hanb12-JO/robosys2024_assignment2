@@ -5,7 +5,14 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest 
     steps:
-      - uses: actions/checkout@v2    
+      - uses: actions/checkout@v2 
+      - name: Install Python dependencies
+        run: |
+          apt-get update && apt-get install -y python3-pip
+          python3 -m pip install --upgrade pip
+          pip install speedtest-cli
+
+   
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/robosys_assignment2/    
