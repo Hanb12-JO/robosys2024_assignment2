@@ -13,7 +13,7 @@ This package uses ROS2 to measure and publish internet download and upload speed
   * ubuntu 22.04 and later
 
 ## Setup
-  This ROS2 package uses speedtest library in python.Please copy the below command to install the speedtest environment.
+  This ROS2 package uses speedtest library in Python. Please copy the below command to install the speedtest environment.
 ```bash
 pip install speedtest-cli
 ```
@@ -28,7 +28,7 @@ git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 ```bash
 cd ~/ros2_ws/
 colcon build
-source ~/.bashrc  #source install/setup.bash also availabale.
+source ~/.bashrc  #source install/setup.bash also available.
 ```
 #### 3. Run
 * Run the publisher in **Desktop1**.
