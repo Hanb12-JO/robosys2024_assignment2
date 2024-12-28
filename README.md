@@ -16,3 +16,14 @@
 ```bash
 pip install speedtest-cli
 ```
+
+## How to use this node
+#### 1. Add this project in ROS2 workspace
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
+cd ..
+colcon build
+source ~/.bashrc
+ros2 launch robosys_assignment2 wifispeed.launch.py
+```
