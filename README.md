@@ -22,8 +22,14 @@ pip install speedtest-cli
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
+```
+#### 2. Build and source
+```bash
 cd ..
 colcon build
 source ~/.bashrc
+```
+#### 3. Launch
+```bash
 ros2 launch robosys_assignment2 wifispeed.launch.py
 ```
