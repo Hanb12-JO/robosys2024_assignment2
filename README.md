@@ -25,7 +25,7 @@ git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 ```
 #### 2. Build and source
 ```bash
-cd ..
+cd ~/ros2_ws/
 colcon build
 source ~/.bashrc
 ```
