@@ -62,3 +62,5 @@ If the issue persists, check the following
 
 ## References  
 * [Python Internet Speed Test Tutorial 2022 (Fast & Easy)](https://www.youtube.com/watch?v=QkMyJatG1Lo)
+
+### © 2024 Abdelrahman Alhanbali. All Rights Reserved.
