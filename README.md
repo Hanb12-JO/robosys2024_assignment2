@@ -29,7 +29,17 @@ cd ~/ros2_ws/
 colcon build
 source ~/.bashrc  #source install/setup.bash also availabal
 ```
-#### 3. Launch
+#### 3. Run
+* Run the publisher in **Desktop1**.
+```bash
+ros2 run robosys_assignment2 wifispeed_talker
+```
+* Run subscriber in **Desktop2**.
+```bash
+ros2 run robosys_assignment2 wifispeed_listner
+```
+#### 4. Launch
+If you want to launch multiple nodes at the same time, please use the following launch command: 
 ```bash
 ros2 launch robosys_assignment2 wifispeed.launch.py
 ```
