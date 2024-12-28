@@ -7,13 +7,13 @@
 ## Overview
 This package uses ROS2 to measure and publish internet download and upload speeds. The data is published to a topic and received by a subscriber node, which logs the results to the display.
 ## Features
-* Can measure the download and upload speeds of internet.
-* Publishe the measurement results via a ROS2 topic, which the subscriber node receives and logs.
+* Can measure the download and upload speeds of the internet.
+* The measurement results are published via a ROS2 topic, which the subscriber node receives and logs.
 ## Require environment
   * ubuntu 22.04 and later
 
 ## Setup
-  This ROS2 package use speedtest library on python.Please copy the below command to install speedtest environment.
+  This ROS2 package uses speedtest library in python.Please copy the below command to install the speedtest environment.
 ```bash
 pip install speedtest-cli
 ```
@@ -28,7 +28,7 @@ git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 ```bash
 cd ~/ros2_ws/
 colcon build
-source ~/.bashrc  #source install/setup.bash also availabal
+source ~/.bashrc  #source install/setup.bash also availabale.
 ```
 #### 3. Run
 * Run the publisher in **Desktop1**.
@@ -44,8 +44,8 @@ If you want to launch multiple nodes at the same time, please use the following 
 ```bash
 ros2 launch robosys_assignment2 wifispeed.launch.py
 ```
-*Note: It may take a long time for the nodes to appear after launching.*
-#### 5.Output
+*Note: The nodes may take a long time to appear after launching.*
+#### 5. Output
 The output will be the same as the demonstration at the top of the page.
 
 ## Troubleshooting
