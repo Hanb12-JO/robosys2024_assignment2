@@ -56,6 +56,6 @@ This error can occur due to temporary network issues or when the external `Speed
 If the issue persists, check the following
 1. Ensure that your internet connection is stable and active.
 2. Verify that the Speedtest CLI is updated to the latest version.
-3. Confirm that network restrictions (proxies or firewalls) are not causing the problem.
-##References
+3. Confirm that network restrictions (proxies or firewalls) are not causing the problem.  
+##References  
 * [Python Internet Speed Test Tutorial 2022 (Fast & Easy)](https://www.youtube.com/watch?v=QkMyJatG1Lo)
