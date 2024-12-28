@@ -52,4 +52,8 @@ During the execution of the `wifispeed_talker` node, you may encounter the follo
 speedtest.ConfigRetrievalError: HTTP Error 403: Forbidden
 ```
 This error can occur due to temporary network issues or when the external `Speedtest` API is temporarily unavailable. If this happens, please wait for a few minutes and try running the program again.  
+
 If the issue persists, check the following:
+* Ensure that your internet connection is stable and active.
+* Verify that the Speedtest CLI is updated to the latest version.
+* Confirm that network restrictions (proxies or firewalls) are not causing the problem.
