@@ -5,9 +5,10 @@
 ![demo](https://github.com/user-attachments/assets/e783f2af-7583-4594-9ae2-1a2a0af928d3)
 
 ## Overview
-
+This package uses ROS2 to measure and publish internet download and upload speeds. The data is published to a topic and received by a subscriber node, which logs the results to the display.
 ## Features
-
+* **Wi-Fi Speed Measurement**: Measures the download and upload speeds of internet.
+* **Publish and Subscribe Data**: Publishes the measurement results via a ROS2 topic, which the subscriber node receives and logs.
 ## Require environment
   * ubuntu 22.04 and later
 
@@ -45,7 +46,7 @@ ros2 launch robosys_assignment2 wifispeed.launch.py
 ```
 *Note: It may take a long time for the nodes to appear after launching.*
 #### 5.Output
-The output will be demonstration.
+The output will be same demonstration on the top of page.
 
 ## Troubleshooting
 During the execution of the `wifispeed_talker` node, you may encounter the following error:
