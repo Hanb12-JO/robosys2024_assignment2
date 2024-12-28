@@ -12,7 +12,7 @@
   * ubuntu 22.04 and later
 
 ## Setup
-  This ROS2 package use speedtest library on python.Please copy the bellow command to install speedtest environment.
+  This ROS2 package use speedtest library on python.Please copy the below command to install speedtest environment.
 ```bash
 pip install speedtest-cli
 ```
@@ -27,7 +27,7 @@ git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 ```bash
 cd ~/ros2_ws/
 colcon build
-source ~/.bashrc
+source ~/.bashrc  #source install/setup.bash also availabal
 ```
 #### 3. Launch
 ```bash
