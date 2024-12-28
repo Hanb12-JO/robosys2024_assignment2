@@ -43,3 +43,4 @@ If you want to launch multiple nodes at the same time, please use the following 
 ```bash
 ros2 launch robosys_assignment2 wifispeed.launch.py
 ```
+*Note: It may take a long time for the nodes to appear after launching.*
