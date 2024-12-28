@@ -7,8 +7,8 @@
 ## Overview
 This package uses ROS2 to measure and publish internet download and upload speeds. The data is published to a topic and received by a subscriber node, which logs the results to the display.
 ## Features
-* **Wi-Fi Speed Measurement**: Measures the download and upload speeds of internet.
-* **Publish and Subscribe Data**: Publishes the measurement results via a ROS2 topic, which the subscriber node receives and logs.
+* Can measure the download and upload speeds of internet.
+* Publishe the measurement results via a ROS2 topic, which the subscriber node receives and logs.
 ## Require environment
   * ubuntu 22.04 and later
 
@@ -63,4 +63,4 @@ If the issue persists, check the following
 ## References  
 * [Python Internet Speed Test Tutorial 2022 (Fast & Easy)](https://www.youtube.com/watch?v=QkMyJatG1Lo)
 
-### © 2024 Abdelrahman Alhanbali. All Rights Reserved.
+© 2024 Abdelrahman Alhanbali. All Rights Reserved.
