@@ -6,12 +6,12 @@ import launch_ros.actions
 
 def generate_launch_description():
     wifispeed_talker = launch_ros.actions.Node(
-            package = 'robosys_assignment2',
+            package = 'robosys2024_assignment2',
             executable = 'wifispeed_talker',
             )
 
     wifispeed_listner = launch_ros.actions.Node(
-            package = 'robosys_assignment2',
+            package = 'robosys2024_assignment2',
             executable = 'wifispeed_listner',
             output = 'screen'
             )

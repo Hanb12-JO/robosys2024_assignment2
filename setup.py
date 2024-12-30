@@ -3,7 +3,7 @@ import os
 from glob import glob
 
 
-package_name = 'robosys_assignment2'
+package_name = 'robosys2024_assignment2'
 
 setup(
     name=package_name,
@@ -24,9 +24,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'wifispeed = robosys_assignment2.wifispeed:main',
-            'wifispeed_talker = robosys_assignment2.wifispeed_talker:main',
-            'wifispeed_listner = robosys_assignment2.wifispeed_listner:main',
+            'wifispeed = robosys2024_assignment2.wifispeed:main',
+            'wifispeed_talker = robosys2024_assignment2.wifispeed_talker:main',
+            'wifispeed_listner = robosys2024_assignment2.wifispeed_listner:main',
         ],
     },
 )
