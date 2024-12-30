@@ -2,7 +2,7 @@
 [![test](https://github.com/Hanb12-JO/robosys2024_assignment2/actions/workflows/test.yml/badge.svg)](https://github.com/Hanb12-JO/robosys2024_assignment2/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 ## Demonstration
-![demo](https://github.com/user-attachments/assets/e783f2af-7583-4594-9ae2-1a2a0af928d3)
+![demo](https://github.com/user-attachments/assets/3be80b08-9a86-4a8c-9e73-1c326be77116)
 
 ## Overview
 This package uses ROS2 to measure and publish internet download and upload speeds. The data is published to a topic and received by a subscriber node, which logs the results to the display.
