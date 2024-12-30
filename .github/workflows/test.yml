@@ -15,6 +15,6 @@ jobs:
    
       - name: build and test
         run: |
-          rsync -av ./ /root/ros2_ws/src/robosys_assignment2/    
+          rsync -av ./ /root/ros2_ws/src/robosys2024_assignment2/    
           cd /root/ros2_ws
-          bash -xv ./src/robosys_assignment2/test/test.bash /root
+          bash -xv ./src/robosys2024_assignment2/test/test.bash /root
