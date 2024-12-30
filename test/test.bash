@@ -8,8 +8,8 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 60 ros2 launch robosys2024-assignment2 wifispeed.launch.py | tee - /tmp/robosys2024-assignment2.log
+timeout 60 ros2 launch robosys2024_assignment2 wifispeed.launch.py | tee - /tmp/robosys2024_assignment2.log
 
 
-cat /tmp/robosys2024-assignment2.log | 
+cat /tmp/robosys2024_assignment2.log | 
 grep 'Mbps'
