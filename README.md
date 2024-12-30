@@ -1,4 +1,4 @@
-# robosys2024-assignment2
+# robosys2024_assignment2
 [![test](https://github.com/Hanb12-JO/robosys2024_assignment2/actions/workflows/test.yml/badge.svg)](https://github.com/Hanb12-JO/robosys2024_assignment2/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 ## Demonstration
