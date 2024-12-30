@@ -48,6 +48,10 @@ ros2 launch robosys_assignment2 wifispeed.launch.py
 #### 5. Output
 The output will be the same as the demonstration at the top of the page.
 
+## Node
+
+## Topic
+
 ## Troubleshooting
 During the execution of the `wifispeed_talker` node, you may encounter the following error:
 ```
