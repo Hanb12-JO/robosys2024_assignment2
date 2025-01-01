@@ -49,7 +49,8 @@ ros2 launch robosys_assignment2 wifispeed.launch.py
 The output will be the same as the demonstration at the top of the page.
 
 ## Node
-* Wifispeed_talker ```wifispeed```
+1. Wifispeed_talker ```wifispeed_pub```
+2. Wifispeed_listner ```wifispeed_sub```
 ## Topic
 ```wifispeed```
 ## Troubleshooting
