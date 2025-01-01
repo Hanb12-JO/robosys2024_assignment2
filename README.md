@@ -49,8 +49,15 @@ ros2 launch robosys_assignment2 wifispeed.launch.py
 The output will be the same as the demonstration at the top of the page.
 
 ## Node
-1. Wifispeed_talker ```wifispeed_pub```
-2. Wifispeed_listner ```wifispeed_sub```
+### 1.WifiSpeedPublisher(`wifispeed_pub`)
+This node measure douwnload spped and upload speed of the internet, and send to `wifispeed`topic.
+### 2. WifiSpeedSubscriber(`wifispeed_sub`)
+This node reseave the data from `wifispeed`topic, and logs like bellow.
+```bash
+[wifispeed_listner-2] [INFO] [1735721805.214572734] [wifispeed_sub]: Getting download speed...
+[wifispeed_listner-2] [INFO] [1735721815.372325707] [wifispeed_sub]: Getting upload speed...
+[wifispeed_listner-2] [INFO] [1735721815.372753008] [wifispeed_sub]: Download: 47.64 Mbps, Upload: 88.35 Mbps
+```
 ## Topic
 ```wifispeed```
 ## Troubleshooting
