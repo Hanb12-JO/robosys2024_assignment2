@@ -59,7 +59,7 @@ The `WifiSpeedSubscriber` node subscribes to the `wifispeed` topic, where it rec
 [wifispeed_listner-2] [INFO] [1735721815.372753008] [wifispeed_sub]: Download: 47.64 Mbps, Upload: 88.35 Mbps
 ```
 ## Topic
-```wifispeed```  
+The```wifispeed``` topic serves as a communication channel between the `WifiSpeedPublisher` and `WifiSpeedSubscriber` nodes. 
 
 ## Troubleshooting
 During the execution of the `wifispeed_talker` node, you may encounter the following error:
