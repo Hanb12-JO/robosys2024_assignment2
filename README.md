@@ -49,7 +49,7 @@ ros2 launch robosys_assignment2 wifispeed.launch.py
 The output will be the same as the demonstration at the top of the page.
 
 ## Node
-#### 1.WifiSpeedPublisher(`wifispeed_pub`)
+#### 1.WifiSpeedPublisher(`_wifispeed_pub_`)
 `WifiSpeedPublisher` is a ROS 2 node that measures internet download and upload speeds using the `Speedtest` library and publishes the results to the `wifispeed` topic in Mbps. It tests internet speed regularly and sends the data to the topic.  
 #### 2. WifiSpeedSubscriber(`wifispeed_sub`)
 The `WifiSpeedSubscriber` node subscribes to the `wifispeed` topic, where it receives internet download and upload speed data published by the `WifiSpeedPublisher` node. Upon receiving the data, it logs the results, including both download and upload speeds.
