@@ -55,7 +55,7 @@ Also, this node use `speedtest-cli`library to measure the internet speed.
 After measure the internet speed, the speed conversion to Mbps
 `WifiSpeedPublisher` is a ROS 2 node that measures internet download and upload speeds using the `Speedtest` library and publishes the results to the `wifispeed` topic in Mbps. It tests internet speed regularly and sends the data to the topic.
 #### 2. WifiSpeedSubscriber(`wifispeed_sub`)
-This node reseave the data from `wifispeed`topic, and logs like bellow.
+This node reseave the data from `wifispeed`topic, and logs like bellow.  
 The WifiSpeedSubscriber node subscribes to the wifispeed topic, where it receives the internet download and upload speed data that is published by the WifiSpeedPublisher node. Upon receiving the data, it logs the results, including both download and upload speeds, along with intermediate steps like fetching the download and upload speeds.
 ```bash
 [wifispeed_listner-2] [INFO] [1735721805.214572734] [wifispeed_sub]: Getting download speed...
