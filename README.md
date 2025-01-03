@@ -10,10 +10,10 @@ This package uses ROS2 to measure and publish internet download and upload speed
 * Can measure the download and upload speeds of the internet.
 * The measurement results are published via a ROS2 topic, which the subscriber node receives and logs.
 ## Require environment
-  * ubuntu 22.04 and later
+* ubuntu 22.04 and later
 
 ## Setup
-  This ROS2 package uses speedtest library in Python. Please copy the below command to install the speedtest environment.
+This ROS2 package uses speedtest library in Python. Please copy the below command to install the speedtest environment.
 ```bash
 pip install speedtest-cli
 ```
@@ -51,15 +51,20 @@ The output will be the same as the demonstration at the top of the page.
 ## Node
 #### 1.WifiSpeedPublisher(`wifispeed_pub`)
 This node measure douwnload spped and upload speed of the internet, and send to `wifispeed`topic.
+Also, this node use `speedtest-cli`library to measure the internet speed.
+After measure the internet speed, the speed conversion to Mbps
+`WifiSpeedPublisher` is a ROS 2 node that measures internet download and upload speeds using the `Speedtest` library and publishes the results to the `wifispeed` topic in Mbps. It tests internet speed regularly and sends the data to the topic.
 #### 2. WifiSpeedSubscriber(`wifispeed_sub`)
 This node reseave the data from `wifispeed`topic, and logs like bellow.
+The WifiSpeedSubscriber node subscribes to the wifispeed topic, where it receives the internet download and upload speed data that is published by the WifiSpeedPublisher node. Upon receiving the data, it logs the results, including both download and upload speeds, along with intermediate steps like fetching the download and upload speeds.
 ```bash
 [wifispeed_listner-2] [INFO] [1735721805.214572734] [wifispeed_sub]: Getting download speed...
 [wifispeed_listner-2] [INFO] [1735721815.372325707] [wifispeed_sub]: Getting upload speed...
 [wifispeed_listner-2] [INFO] [1735721815.372753008] [wifispeed_sub]: Download: 47.64 Mbps, Upload: 88.35 Mbps
 ```
 ## Topic
-```wifispeed```
+```wifispeed```  
+
 ## Troubleshooting
 During the execution of the `wifispeed_talker` node, you may encounter the following error:
 ```
