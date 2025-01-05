@@ -25,7 +25,7 @@ cd ~/ros2_ws/src
 git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 ```
 *Note: Replace *`ros2_ws`* with the nameof your ROS2 workspace directory if it is different.*
-#### 3. Run
+#### 2. Run
 * Run the publisher in **Desktop1**.
 ```bash
 ros2 run robosys_assignment2 wifispeed_talker
@@ -34,15 +34,14 @@ ros2 run robosys_assignment2 wifispeed_talker
 ```bash
 ros2 run robosys_assignment2 wifispeed_listner
 ```
-#### 4. Launch
+#### 3. Launch
 If you want to launch multiple nodes at the same time, please use the following launch command: 
 ```bash
 ros2 launch robosys_assignment2 wifispeed.launch.py
 ```
 *Note: The nodes may take a long time to appear after launching.*
-#### 5. Output
+#### 4. Output
 The output will be the same as the demonstration at the top of the page.
-
 ## Node
 #### 1.WifiSpeedPublisher
 The`WifiSpeedPublisher` is a ROS 2 node that measures internet download and upload speeds using the `Speedtest` library and publishes the results to the `wifispeed` topic in Mbps. It tests internet speed regularly and sends the data to the topic.  
