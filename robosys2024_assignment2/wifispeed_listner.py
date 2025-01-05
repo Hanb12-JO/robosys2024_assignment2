@@ -7,7 +7,7 @@ from std_msgs.msg import String
 
 class WifiSpeedSubscriber(Node):
     def __init__(self):
-        super().__init__("wifispeed_sub")
+        super().__init__("WifiSpeedSubscriber")
         self.create_subscription(String, "wifispeed", self.cb, 10)
 
     def cb(self, msg):

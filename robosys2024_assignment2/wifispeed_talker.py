@@ -16,7 +16,7 @@ def bytes_to_mb(size_bytes):
 
 class WifiSpeedPublisher(Node):
     def __init__(self):
-        super().__init__('wifispeed_publisher')
+        super().__init__('WifiSpeedSubscriber')
         self.pub = self.create_publisher(String, 'wifispeed', 10)
         self.wifi = speedtest.Speedtest()
         self.create_timer(1.0, self.cb)
