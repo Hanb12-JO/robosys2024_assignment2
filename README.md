@@ -24,12 +24,7 @@ pip install speedtest-cli
 cd ~/ros2_ws/src
 git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 ```
-#### 2. Build and source
-```bash
-cd ~/ros2_ws/
-colcon build
-source ~/.bashrc  #source install/setup.bash also available.
-```
+*Note: Replace `ros2_ws` with the nameof your ROS2 workspace directory if it is different.*
 #### 3. Run
 * Run the publisher in **Desktop1**.
 ```bash
