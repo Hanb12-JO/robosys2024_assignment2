@@ -28,16 +28,16 @@ git clone https://github.com/Hanb12-JO/robosys2024-assignment2.git
 #### 2. Run
 * Run the publisher in **Desktop1**.
 ```bash
-ros2 run robosys_assignment2 wifispeed_talker
+ros2 run robosys2024_assignment2 wifispeed_talker
 ```
 * Run subscriber in **Desktop2**.
 ```bash
-ros2 run robosys_assignment2 wifispeed_listner
+ros2 run robosys2024_assignment2 wifispeed_listner
 ```
 #### 3. Launch
 If you want to launch multiple nodes at the same time, please use the following launch command: 
 ```bash
-ros2 launch robosys_assignment2 wifispeed.launch.py
+ros2 launch robosys2024_assignment2 wifispeed.launch.py
 ```
 *Note: The nodes may take a long time to appear after launching.*
 #### 4. Output
